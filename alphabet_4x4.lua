@@ -163,5 +163,5 @@ print ('tabls_amount:' .. tabls_amount)
 -- 6 for s = 2
 -- 162 for s = 3
 -- 22640 for s = 4
--- n for s = 5 (too much, less than 33 mio.)
+-- 11941010 for s = 5 (too much, less than 33 mio.)
 
