@@ -2,11 +2,11 @@
 Can we crate tiny alphabet, that use as less pixels as possible?
 
 Rules:
-1. Every symbol is unique
-2. Every symbol has same size
-3. The height and width are equals
-3. No gaps
-4. No fillings
+  1. Every symbol is unique
+  2. Every symbol has same size
+  3. The height and width are equals
+  3. No gaps
+  4. No fillings
 
 So, we have square symbols, for example 4x4 pixels.
 We are need at least one black pixel in first and last rows, at least one pixel in first and last columns.
@@ -51,7 +51,7 @@ Good examples:
 
 ж
  
-  So for no gaps and no fillings we are need:
-5. At least one white pixel near of every black pixel.
-6. At least one black pixel near of every black pixel.
+So for no gaps and no fillings we are need:
+  5. At least one white pixel near of every black pixel
+  6. At least one black pixel near of every black pixel
 
