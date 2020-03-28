@@ -53,6 +53,6 @@ Good examples:
  
 So for no gaps and no fillings we are need:
 
-  5. At least one white pixel near of every black pixel
-  6. At least one black pixel near of every black pixel
+5. At least one white pixel near of every black pixel
+6. At least one black pixel near of every black pixel
 
