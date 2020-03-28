@@ -20,6 +20,7 @@ Good examples:
     1101   1110   1000
     0111   1001   0111
 
+
  Bad examples:
 1.  Here is filling in the pixel {1,1}:
 
@@ -27,7 +28,8 @@ Good examples:
       1110
       1000
       1000
- 
+
+
 2. Here is no pixel in last column:
  
       1110
