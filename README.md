@@ -18,24 +18,24 @@ Good examples:
 ** *  ***    *
  ***  *  *    ***
  
-Bad examples:
+ Bad examples:
 1.  Here is filling in the pixel {1,1}:
-** *
-***
-*
- *
+ жж ж
+ жжж 
+ ж   
+ ж
  
- 2. Here is no pixel in last clumn:
- ***
- * *
- * *
- ** 
+2. Here is no pixel in last clumn:
+ жжж
+ ж ж
+ ж ж
+ жж 
  
- 3. Here is gab by the pixel {4, 1}
- *  *
- **  
-  ***
- *
+3. Here is gab by the pixel {4, 1}
+ ж  ж
+ жж  
+  жжж
+ ж
  
  So for no gaps and no fillings we are need:
  5. At least one white pixel near of every black pixel.
