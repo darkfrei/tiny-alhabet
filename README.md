@@ -32,7 +32,7 @@ Good examples:
 
 ж
  
-2. Here is no pixel in last clumn:
+2. Here is no pixel in last column:
 
 жжж
 
