@@ -23,31 +23,25 @@ Good examples:
  Bad examples:
 1.  Here is filling in the pixel {1,1}:
 
-    1101
-    1110
-    1000
-    1000
+      1101
+      1110
+      1000
+      1000
  
 2. Here is no pixel in last column:
  
-     1110
-   
-     1010
-   
-     1010
-   
-     1100
+      1110
+      1010
+      1010
+      1100
 
 
 3. Here is gap by the pixel {4, 1}:
- 
-     1001
-   
-     1100
-   
-     1111
-   
-     1000
+
+      1001
+      1100
+      1111
+      1000
 
 
 So for no gaps and no fillings we are need:
