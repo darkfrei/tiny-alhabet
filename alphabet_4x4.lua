@@ -124,7 +124,7 @@ end
 
 --------------- start
 --local tabls = {}
-local s = 4 -- size
+local s = 4 -- size, the side of the square field
 
 local sq = s^2 -- 16 slots
 local slots = {}
