@@ -1,4 +1,20 @@
-local File = assert(io.open('D:/Lua/ZBS/myprograms/my/c.bmp', 'rb'))
+
+local File = assert(io.open('output/4_5254.bmp', 'rb'))
+
+--	black pixels per row:
+--		1	2	3	0	1	2	3	0	1
+--
+--	size in bytes by width and height in pixels:
+--  h\w	1	2	3	4	5	6	7	8	9
+-- _____________________________________________
+--|	1	58	62	66	66	70	74	78	78
+--|	2	62	70	78	78	86	94	102	102
+--|	3	66	78	90	90	102	114			
+--|	4	70	86		102					166
+--|	5	74	94			134
+--|	6	78	102				174
+--|_____________________________________________
+
 local bytecode = File:read("*all")
 --local bytecode = File:read("*a")
 --File:close()
@@ -20,7 +36,7 @@ local bmp_structure = {
 	typ = {offset = 1, length = 2}, -- returns 19778, magic value for BMP-format
 --	off_bytes = {offset = 11, length = 2}, -- returns 54 bytes, amount of system bytes
 	off_bytes = {offset = 11, length = 1}, -- returns 54 bytes, amount of system bytes
-	width = {offset = 19, length = 4}, -- returns width in pixels without last black pixel
+	width = {offset = 19, length = 4}, -- returns width in pixels without last black pixel(s)
 	height = {offset = 23, length = 4}, -- returns height in pixels
 	bit_count = {offset = 29, length = 2}, -- must be 24 bits per color; one byte for subpixel
 	compression = {offset = 31, length = 4} -- must me 0
@@ -77,7 +93,7 @@ function get_24_bit_data (bytecode, offset_data, size, width, height)
 		pixel.y = y
 		if y > 0 then
 			table.insert (pixels, pixel)
-			print ('x:' .. x .. ' y:' .. y .. ' str: ' .. str)
+--			print ('x:' .. x .. ' y:' .. y .. ' str: ' .. str)
 			x = x + 1
 			if x > width then
 				x = 1
@@ -97,3 +113,6 @@ elseif bit_count == 8 then
 	print ('8 bit color')
 	
 end
+
+
+
